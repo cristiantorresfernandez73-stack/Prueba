@@ -1,0 +1,23 @@
+[Unit]
+Description=Tablero Tactico TFT Meta API
+After=network-online.target mysql.service
+Wants=network-online.target
+Requires=mysql.service
+
+[Service]
+Type=simple
+User=SSH
+Group=SSH
+WorkingDirectory=/home/SSH/tft-backend/backend
+EnvironmentFile=/home/SSH/tft-backend/backend/.env
+ExecStart=/home/SSH/tft-backend/backend/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

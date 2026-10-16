@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende a construir y adaptar composiciones en Teamfight Tactics.">
+  <title>Composiciones | Nexo TFT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav wrap" aria-label="Navegación principal"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Nexo<span class="brand-accent"> TFT</span></span></a><div class="nav-links"><a href="index.html">Inicio</a><a class="active" aria-current="page" href="composiciones.html">Composiciones</a><a href="economia.html">Economía</a><a href="posicionamiento.html">Posicionamiento</a></div><span class="edition">META TFT · GUÍA EN ESPAÑOL <span aria-hidden="true">●</span></span></nav></header>
+  <main>
+    <section class="chapter-hero wrap"><p class="eyebrow"><span class="eyebrow-line"></span> Capítulo 01 · Equipo</p><h1>Elige una dirección.<br><span>Conserva la flexibilidad.</span></h1><p class="chapter-intro">Una composición no es una lista inamovible: es un plan que conecta unidades, rasgos, objetos y condiciones de victoria.</p></section>
+    <section class="ranking-section wrap" aria-labelledby="ranking-title">
+      <div class="ranking-header">
+        <div><p class="eyebrow">Meta · Datos de OP.GG</p><h2 id="ranking-title">Top 100 del set activo</h2><p class="ranking-intro">Explora hasta 100 builds, ordenadas por tasa de primer puesto.</p></div>
+        <a class="button button-primary" href="https://op.gg/tft/meta-trends/comps?sort=1stRate" target="_blank" rel="noopener noreferrer">Ver ranking en vivo <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="ranking-meta" id="metaSummary" aria-live="polite"></div>
+      <p class="ranking-count" id="rankingCount" aria-live="polite"></p>
+      <div class="ranking-controls">
+        <label class="ranking-search">Buscar composición<input id="compositionSearch" type="search" placeholder="Nombre, unidad o rasgo" autocomplete="off"></label>
+        <label>Tier<select id="tierFilter"><option value="all">Todos</option><option value="S">S</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></label>
+        <label>Tipo<select id="categoryFilter"><option value="all">Todos</option><option value="Comps">Comps</option><option value="Emblem">Emblemas</option></select></label>
+        <label>Ordenar por<select id="sortOrder"><option value="firstRate">Tasa de 1.er puesto</option><option value="top4Rate">Top 4</option><option value="avgPlace">Puesto medio</option><option value="pickRate">Frecuencia</option></select></label>
+      </div>
+      <div class="ranking-table-wrap" role="region" aria-label="Top 100 de composiciones por tasa de primer puesto" tabindex="0">
+        <table class="ranking-table">
+          <thead><tr><th scope="col">#</th><th scope="col">Build</th><th scope="col">Tipo</th><th scope="col">1.er puesto</th><th scope="col">Top 4</th><th scope="col">Puesto medio</th><th scope="col">Frecuencia</th></tr></thead>
+          <tbody id="compositionRows"><tr><td colspan="7">Cargando datos de temporada…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="ranking-note" id="rankingNote">La frecuencia importa: una tasa alta con pocas partidas puede ser poco representativa. El ranking en vivo se consulta en OP.GG; esta lista usa la temporada configurada para el sitio.</p>
+    </section>
+    <div class="chapter-layout wrap">
+      <article class="chapter-content">
+        <section class="chapter-block"><h2>Empieza por lo que la partida ofrece</h2><p>La tienda, los objetos iniciales y las unidades que mejoras son información. Antes de decidir una composición, mira qué opciones aparecen de forma natural y cuáles compiten por los mismos recursos.</p><ul><li>Identifica pares y mejoras tempranas antes de vender unidades útiles.</li><li>Observa qué componentes de objetos tienes y qué portadores pueden aprovecharlos.</li><li>Compara tu tablero actual con las alternativas reales, no con una composición ideal imaginada.</li></ul></section>
+        <section class="chapter-block"><h2>Piensa en funciones, no solo en nombres</h2><p>Los nombres y rasgos cambian entre sets, pero las funciones se repiten: unidades que absorben daño, fuentes principales de daño, utilidad y piezas que activan sinergias. Una formación necesita cubrir sus necesidades, no acumular rasgos sin propósito.</p><div class="callout"><strong>Pregunta de control:</strong> ¿quién hace el daño, quién compra tiempo y qué unidad necesita protección?</div></section>
+        <section class="chapter-block"><h2>Reconoce cuándo cambiar</h2><p>Comprometerse demasiado pronto puede hacerte gastar oro en una dirección que la tienda ya no respalda. Mantén opciones mientras reúnes información y reduce el abanico cuando tengas una mejora, objetos compatibles o una transición clara.</p><ol><li>Conserva temporalmente unidades que abran más de una ruta.</li><li>Revisa la tienda y el tablero antes de gastar una ronda de oro en cambios.</li><li>Haz la transición en un momento que mantenga tu fuerza de tablero; no vendas tus apoyos antes de tener reemplazos.</li></ol></section>
+        <section class="chapter-block"><h2>Ten un plan A y una salida</h2><p>Un plan B no significa perseguir dos composiciones completas a la vez. Significa reconocer qué unidades, objetos o mejoras pueden sostenerte si tu opción principal está disputada o no aparece.</p><p>La guía específica de cada set debe confirmar unidades, umbrales de rasgos y nivel recomendado: esos detalles no son universales y cambian con el balance.</p></section>
+        <nav class="chapter-next" aria-label="Siguiente capítulo"><a href="index.html">← Inicio</a><a href="economia.html">Siguiente: Economía →</a></nav>
+      </article>
+      <aside class="chapter-aside"><p class="aside-label">LISTA DE COMPROBACIÓN</p><ul class="aside-list"><li>Unidades mejoradas <span>BASE</span></li><li>Roles cubiertos <span>DAÑO / FRENTE</span></li><li>Objetos compatibles <span>PORTADORES</span></li><li>Contienda observada <span>RIVALES</span></li></ul></aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark">N</span><span>Nexo<span class="brand-accent"> TFT</span></span></a><span>Guía educativa independiente · No afiliada a Riot Games</span><a href="#">Volver arriba ↑</a></div></footer>
+  <script src="season-data.js"></script>
+  <script src="composiciones.js" defer></script>
+</body>
+</html>
